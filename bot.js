@@ -368,4 +368,4 @@ if (message.content.startsWith(adminprefix + 'sets')) {
 }
 });
 
-client.login("BOT_TOKEN")
+client.login(process.env.BOT_TOKEN);
