@@ -98,7 +98,7 @@ client.on('message', async msg => {
     let command = msg.content.toLowerCase().split(" ")[0];
     command = command.slice(prefix.length)
  
-    if (command === `play,p`) {
+    if (command === `play`) {
         const voiceChannel = msg.member.voiceChannel;
        
         if (!voiceChannel) return msg.channel.send("I cant find you in any voice channel!");
@@ -336,14 +336,12 @@ client.on('message', message => {
        .addField('avatar', "افاتار الشخص المطلوب")
        .addField('gif', 'البحث عن جيف انت تطلبه')
        .addField('ping', 'معرفة ping البوت')
-       .addField('bot made by: !                    x'1Кemuda .#٦٣٣٤')
        .setFooter('المزيد قريبا ان شاء الله!')
-       
      message.channel.send(helpEmbed);
    }
 });
  
-const adminprefix = "!!";
+const adminprefix = "$";
 const devs = ['415142691282616330','268986012309520386'];
 client.on('message', message => {
  var argresult = message.content.split(` `).slice(1).join(' ');
@@ -362,10 +360,10 @@ return message.reply("**لا يمكنك تغيير الاسم يجب عليك ا
 client.user.setAvatar(argresult);
  message.channel.sendMessage(`**${argresult}** : تم تغير صورة البوت`);
      } else    
-if (message.content.startsWith(adminprefix + 'sets')) {
- client.user.setGame(argresult, "https://www.twitch.tv/idk");//حقوق محمد دوله
-   message.channel.sendMessage(`**تم تغيير تويتش البوت إلى  ${argresult}**`)//
+if (message.content.startsWith(adminprefix + 'setT')) {
+ client.user.setGame(argresult, "https://www.twitch.tv/idk");//حقوق دايموند كودز
+   message.channel.sendMessage(`**تم تغيير تويتش البوت إلى  ${argresult}**`)//حقوق دايموند كودز
 }
 });
 
-client.login(process.env.BOT_TOKEN);
+client.login("token")
