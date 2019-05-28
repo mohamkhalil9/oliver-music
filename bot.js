@@ -366,4 +366,4 @@ if (message.content.startsWith(adminprefix + 'setT')) {
 }
 });
 
-client.login("token")
+client.login(process.env.BOT_TOKEN);
