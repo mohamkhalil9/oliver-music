@@ -1,6 +1,6 @@
-token=NTgyNzEyNDg5NjExODg2NjAy.XO1eSQ.f9ssnf7vha70UMjQS7srbFcEKtM
+token=NDI4OTQ2OTQyOTAzNDUxNjQ4.XRntSw.JV1ARAiAjyw9c1WnVUK0L826ICE
 owner= 415142691282616330
 prefix= 1
-game= Type OliverSky | 1help
+game= . من الله دوله 
 stayinchannel=true
 songinstatus=false
